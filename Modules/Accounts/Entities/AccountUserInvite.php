@@ -1,0 +1,59 @@
+<?php
+namespace Modules\Accounts\Entities;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\Pivot;
+use Modules\SharedRoles\Entities\SharedRole;
+use Modules\User\Entities\User;
+
+class AccountUserInvite extends Pivot
+{
+    /** @use HasFactory<\Modules\Accounts\Database\Factories\AccountUserInviteFactory> */
+    use HasFactory;
+
+    /**
+     * The attributes that are mass assignable.
+     */
+    protected $fillable = ['user_id', 'account_id', 'shared_role_id', 'status', 'invited_by_id'];
+    protected $table    = 'account_user_invites';
+
+    protected static function newFactory()
+    {
+        return \Modules\Accounts\Database\Factories\AccountUserInviteFactory::new ();
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+    public function sender()
+    {
+        return $this->belongsTo(User::class, 'invited_by_id');
+    }
+    public function account()
+    {
+        return $this->belongsTo(Account::class);
+    }
+    public function sharedRole(): BelongsTo
+    {
+        return $this->belongsTo(SharedRole::class, 'shared_role_id');
+    }
+
+    public function scopeUser($query, $userId)
+    {
+        return $query->where('user_id', $userId);
+    }
+    public function scopeAccount($query, $accountId)
+    {
+        return $query->where("account_id", $accountId);
+    }
+    public function scopeStatus($query, $status)
+    {
+        return $query->where('status', $status);
+    }
+    public function scopeInvitedBy($query, $userId)
+    {
+        return $query->where('invited_by_id', $userId);
+    }
+}
