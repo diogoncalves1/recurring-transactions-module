@@ -1,4 +1,5 @@
 {
     "Accounts": true,
+    "Permission": true,
     "User": true
 }
