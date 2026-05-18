@@ -1,5 +1,6 @@
 {
     "Accounts": true,
     "Permission": true,
-    "User": true
+    "User": true,
+    "RecurringTransaction": true
 }
