@@ -3,6 +3,7 @@
     "ApiResponser": true,
     "Debts": true,
     "FinancialGoal": true,
+    "Notification": true,
     "Permission": true,
     "RecurringTransaction": true,
     "SharedRoles": true,
