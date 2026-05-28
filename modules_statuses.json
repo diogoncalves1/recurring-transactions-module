@@ -2,6 +2,7 @@
     "Accounts": true,
     "ApiResponser": true,
     "Permission": true,
-    "User": true,
-    "RecurringTransaction": true
+    "RecurringTransaction": true,
+    "SharedRoles": true,
+    "User": true
 }
