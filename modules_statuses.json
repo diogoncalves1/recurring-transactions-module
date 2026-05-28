@@ -2,6 +2,7 @@
     "Accounts": true,
     "ApiResponser": true,
     "Debts": true,
+    "FinancialGoal": true,
     "Permission": true,
     "RecurringTransaction": true,
     "SharedRoles": true,
