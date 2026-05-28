@@ -1,6 +1,7 @@
 {
     "Accounts": true,
     "ApiResponser": true,
+    "Debts": true,
     "Permission": true,
     "RecurringTransaction": true,
     "SharedRoles": true,
