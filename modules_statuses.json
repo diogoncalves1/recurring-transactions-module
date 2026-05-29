@@ -2,6 +2,7 @@
     "Accounts": true,
     "ActivityLog": true,
     "ApiResponser": true,
+    "Category": true,
     "Debts": true,
     "FinancialGoal": true,
     "Notification": true,
