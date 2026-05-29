@@ -1,7 +1,13 @@
 {
     "Accounts": true,
+    "ActivityLog": true,
     "ApiResponser": true,
+    "Category": true,
+    "Debts": true,
+    "FinancialGoal": true,
+    "Notification": true,
     "Permission": true,
-    "User": true,
-    "RecurringTransaction": true
+    "RecurringTransaction": true,
+    "SharedRoles": true,
+    "User": true
 }
