@@ -3,6 +3,7 @@
     "ActivityLog": true,
     "ApiResponser": true,
     "Category": true,
+    "Currency": true,
     "Debts": true,
     "FinancialGoal": true,
     "Language": true,
