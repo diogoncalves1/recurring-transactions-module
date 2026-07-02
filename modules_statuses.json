@@ -11,5 +11,6 @@
     "Permission": true,
     "RecurringTransaction": true,
     "SharedRoles": true,
-    "User": true
+    "User": true,
+    "UserPreferences": true
 }
