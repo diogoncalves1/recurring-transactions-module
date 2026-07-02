@@ -5,6 +5,7 @@
     "Category": true,
     "Debts": true,
     "FinancialGoal": true,
+    "Language": true,
     "Notification": true,
     "Permission": true,
     "RecurringTransaction": true,
